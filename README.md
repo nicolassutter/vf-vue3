@@ -1,11 +1,27 @@
-# Vue 3 + Typescript + Vite
+# VF Vue 3.x
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Sommaire
 
-## Recommended IDE Setup
+1. [:Vue: d'ensemble](#example)
+2. [Composition API](#example)
+3. [Data](#example2)
+4. [Computed](#third-example)
+5. [Hooks](#fourth-examplehttpwwwfourthexamplecom)
+6. [Store](#fourth-examplehttpwwwfourthexamplecom)
+7. [Events](#fourth-examplehttpwwwfourthexamplecom)
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Vue d'ensemble
 
-## Type Support For `.vue` Imports in TS
+- Plus besoin d'avoir de balise englobante
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+```vue
+  <p>Enfant 1</p>
+  <p>Enfant 2</p>
+```
+
+- Le modifier `.native` n'existe plus
+
+## Composition API
+
+Nouvelles syntaxe de la partie `<script>` dans les composants.
+Tout est maintnant dans une seule fonction `setup` qui retourne ce qui doit être disponible dans le `<template>`
