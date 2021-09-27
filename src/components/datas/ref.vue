@@ -1,4 +1,5 @@
 <template>
+  <h2 class="title">Datas - Ref</h2>
   <p>{{ search }}</p>
 </template>
 
@@ -6,7 +7,7 @@
   import { ref } from 'vue'
 
   export default {
-    name: 'xxx',
+    name: 'ref',
 
     setup() {
       const search = ref('valeur par défaut')

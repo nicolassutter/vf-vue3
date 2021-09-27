@@ -1,5 +1,11 @@
 <template>
-  <p class="text-red">Du rouge</p>
+  <h2 class="title">Styles</h2>
+  <p class="text text-white p-2 rounded">Du rouge</p>
+  <div class="space-x-2">
+    <button class="button" @click="set_color('red')">Rouge</button>
+    <button class="button" @click="set_color('green')">Vert</button>
+    <button class="button" @click="set_color('blue')">Bleu</button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -11,14 +17,20 @@ export default {
   setup() {
     const color = ref('red')
 
-    return { color }
+    const set_color = (_color: string) => color.value = _color
+
+    return { color, set_color }
   }
 }
 </script>
 
 <style scoped>
 /* Va créer une variable css */
-.text-red {
-  color: v-bind(color);
+.text {
+  background: v-bind(color);
+}
+
+.button {
+  @apply bg-gray-700 rounded p-3 text-white;
 }
 </style>
