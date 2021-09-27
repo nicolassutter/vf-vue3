@@ -2,14 +2,17 @@
 
 ## Sommaire
 
-1. [:Vue: d'ensemble](#example)
-2. [Composition API](#example)
-3. [Data](#example2)
-4. [Computed](#third-example)
-5. [Hooks](#fourth-examplehttpwwwfourthexamplecom)
-6. [Router](#fourth-examplehttpwwwfourthexamplecom)
-7. [Store](#fourth-examplehttpwwwfourthexamplecom)
-8. [Events](#fourth-examplehttpwwwfourthexamplecom)
+1. :Vue: d'ensemble
+2. Composition API
+3. Data
+4. Computed
+5. Template Refs
+6. Hooks
+7. Router
+8. Store
+9. Events
+10. Styles
+11. Props
 
 ## Vue d'ensemble
 
@@ -37,3 +40,5 @@
 
 Nouvelles syntaxe de la partie `<script>` dans les composants.
 Tout est maintnant dans une seule fonction `setup` qui retourne ce qui doit être disponible dans le `<template>`
+
+L'idée de la nouvelle syntaxe est de se rapprocher d'une écriture JS pure, pour simplifier l'utilisation de Typescript. Dans l'ancienne syntaxe il était compliqué de les faire cohabiter, maintenant le support est complet et franchement sympa.
