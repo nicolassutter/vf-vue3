@@ -1,4 +1,5 @@
 <template>
+  <!-- Chaque clé est maintenant une ref, on peut la référencer ici -->
   <p>{{ un }}</p>
   <p>{{ deux }}</p>
 </template>

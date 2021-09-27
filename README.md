@@ -7,8 +7,9 @@
 3. [Data](#example2)
 4. [Computed](#third-example)
 5. [Hooks](#fourth-examplehttpwwwfourthexamplecom)
-6. [Store](#fourth-examplehttpwwwfourthexamplecom)
-7. [Events](#fourth-examplehttpwwwfourthexamplecom)
+6. [Router](#fourth-examplehttpwwwfourthexamplecom)
+7. [Store](#fourth-examplehttpwwwfourthexamplecom)
+8. [Events](#fourth-examplehttpwwwfourthexamplecom)
 
 ## Vue d'ensemble
 
@@ -20,6 +21,17 @@
 ```
 
 - Le modifier `.native` n'existe plus
+
+- On doit maintenant mettre les `:key="xxx"` sur les templates et plus leurs enfants directs.
+
+```vue
+<template v-for="item in list" :key="item.id">
+  <div>...</div>
+  <span>...</span>
+</template>
+```
+
+- Plus possible de créer des EventBus depuis Vue directement, il faut utiliser une petite lib `mitt` qui a la même syntaxe.
 
 ## Composition API
 
