@@ -43,4 +43,4 @@ Tout est maintnant dans une seule fonction `setup` qui retourne ce qui doit êtr
 
 L'idée de la nouvelle syntaxe est de se rapprocher d'une écriture JS pure, pour simplifier l'utilisation de Typescript. Dans l'ancienne syntaxe il était compliqué de les faire cohabiter, maintenant le support est complet et franchement sympa.
 
-Dans cette syntaxe, le mot clé `this` n'est plus utilisé, ce qui est beaucoup plus simple pour l'autocomplétion de vscode car `this` peut faire référence à tout et n'importe quoi.
+Dans cette syntaxe, le mot clé `this` n'est plus utilisé, ce qui est beaucoup plus simple pour l'autocomplétion (et donc TS) de vscode car `this` peut faire référence à tout et n'importe quoi.
