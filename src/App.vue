@@ -9,6 +9,7 @@ import Store from './components/store/store.vue'
 import Events from './components/events/events.vue'
 import Styles from './components/styles/styles.vue'
 import Props from './components/props/props.vue'
+import Setup from './components/script/setup.vue'
 </script>
 
 <template>
@@ -23,6 +24,7 @@ import Props from './components/props/props.vue'
     <events></events>
     <styles></styles>
     <props message="On se fait une fondue ?"></props>
+    <setup></setup>
   </main>
 </template>
 
