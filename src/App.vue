@@ -13,7 +13,7 @@ import Setup from './components/script/setup.vue'
 </script>
 
 <template>
-  <main class="prose lg:prose-xl p-5 lg:p-20 max-w-6xl mx-auto">
+  <main class="max-w-6xl p-5 mx-auto prose lg:prose-xl lg:p-20">
     <reactive></reactive>
     <ref></ref>
     <computed></computed>

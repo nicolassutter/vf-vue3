@@ -1,14 +1,11 @@
-version: "0.1"
-
+version: '0.2'
 services:
-  app:
-    container_name: app-dev
-    image: app-dev
+  vite:
     build:
       context: .
-      target: development
-    volumes:
-      - ./:/app/
-      - /app/node_modules/
+      target: 'develop-stage'
     ports:
-      - 3000:3000
+    - '3000:3000'
+    volumes:
+    - '.:/app'
+    command: /bin/sh -c "npm i && npm run dev"
