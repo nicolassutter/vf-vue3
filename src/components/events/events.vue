@@ -1,7 +1,8 @@
 <template>
+  <h2 class="title">Events</h2>
   <button @click="$emit('update-stuff')">xxx</button>
   <button @click="click">xxx</button>
-  <un-composant @click="click"></un-composant>
+  <!-- <un-composant @click="click"></un-composant> -->
 </template>
 
 <script lang="ts">

@@ -1,5 +1,6 @@
 <template>
   <!-- Chaque clé est maintenant une ref, on peut la référencer ici -->
+  <h2 class="title">Datas - Reactive</h2>
   <p>{{ un }}</p>
   <p>{{ deux }}</p>
 </template>
@@ -8,7 +9,7 @@
   import { toRefs, reactive } from 'vue'
 
   export default {
-    name: 'xxx',
+    name: 'reactive',
 
     setup() {
       const state = reactive({

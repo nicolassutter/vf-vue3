@@ -1,6 +1,7 @@
 <template>
+  <h2 class="title">Props</h2>
   <p>{{ message }}</p>
-  <p>{{ _message }}</p>
+  <p>{{ current_message }}</p>
 </template>
 
 <script lang="ts">
@@ -27,9 +28,9 @@ export default {
     // OU
     // const message = toRef(props, 'message')
 
-    const _message = computed(() => props.message + '!!!')
+    const current_message = computed(() => props.message + ' :cheese:')
 
-    return { _message }
+    return { current_message }
   }
 }
-</script>
+</script> 

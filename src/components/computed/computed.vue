@@ -1,4 +1,5 @@
 <template>
+  <h2 class="title">Computed</h2>
   <p>{{ total }}</p>
 </template>
 
@@ -6,7 +7,7 @@
   import { reactive, computed } from 'vue'
 
   export default {
-    name: 'xxx',
+    name: 'computed',
 
     setup() {
       const state = reactive({

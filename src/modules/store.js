@@ -7,6 +7,12 @@ const store = createStore({
     }
   },
 
+  getters: {
+    count(state) {
+      return state.count
+    }
+  },
+
   mutations: {
     increment (state) {
       state.count++

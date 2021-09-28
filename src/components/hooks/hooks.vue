@@ -1,5 +1,6 @@
 <template>
-  <p>{{ message }}</p>
+  <h2 class="title">Hooks</h2>
+  <p><span class="font-bold">Je suis défini au mounted</span>: {{ message }}</p>
 </template>
 
 <script lang="ts">

@@ -1,8 +1,10 @@
 <template>
-  <p>{{ $route.name }}</p>
+  <h2 class="title">Router</h2>
+  <pre><code>{{ code }}</code></pre>
 </template>
 
 <script lang="ts">
+import { computed } from '@vue/reactivity'
 import { useRouter, useRoute } from 'vue-router'
 
 export default {
@@ -15,9 +17,11 @@ export default {
     const name = route.name
     const params = route.params
 
-    router.push('/')
+    const code = computed(() => JSON.stringify(route, undefined, 2).trim())
 
-    return {}
+    // router.push('/')
+
+    return { code }
   }
 }
 </script>
