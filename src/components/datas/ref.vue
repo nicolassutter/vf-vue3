@@ -17,7 +17,7 @@
       /* ❌ */ console.log(search)
       /* ✅ */ console.log(search.value)
 
-      // Toutes les refs sont wrappés d'un objet propre à Vue, pour accéder à la valeur il faut toujours `.value`
+      // Toutes les refs sont wrappées d'un objet propre à Vue, pour accéder à la valeur il faut toujours `.value`
 
       return { search }
     }
