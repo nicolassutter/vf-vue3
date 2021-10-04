@@ -6,6 +6,9 @@ import { useGetters } from './../../modules/hooks/useGetters'
 
 const component = defineComponent({
   name: 'Setup'
+  // mixin
+  // provide
+  // etc
   /**
    * On a même pas besoin de faire { components: {...} }
    * 
