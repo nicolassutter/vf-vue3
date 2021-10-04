@@ -35,7 +35,7 @@
 </template>
 ```
 
-- Plus possible de créer des EventBus depuis Vue directement, il faut utiliser une petite lib `mitt` qui a la même syntaxe.
+- Plus possible de créer des EventBus depuis Vue directement, il faut utiliser une petite lib [`mitt`](https://www.npmjs.com/package/mitt) qui a la même syntaxe.
 
 - Dans les compostants, l'ordre des balises à changé, c'est `<script>` -> `<template>` -> `<style>`
 
